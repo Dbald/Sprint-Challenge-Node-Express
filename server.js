@@ -20,7 +20,6 @@ server.use(cors());
 server.use('/api/actions', actionsRouter);
 server.use('/api/project', projectRouter);
 
-
 //Endpoint
 server.get('/', (req, res) => {
     res.json({ Success: `API Running on port ${ port }`});
